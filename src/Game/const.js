@@ -27,7 +27,10 @@ const CARDS = {
 }
 
 const EVENTS = {
-  mySignal: 'mySignal'
+  isCardMatched: 'mySignal',
+  isCardErrorMatched: 'mySignal',
+  isCardActive: 'mySignal',
+  checkHintState: 'mySignal',
 }
 
 export {

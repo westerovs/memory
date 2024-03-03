@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { createBoard, getPositionsCards } from '../../utils/utils.js'
+import { createBoard, getPositionsCards } from '../../../#phaser/utils/utils.js'
 import {tweenSetAlpha} from '../../utils/tweens.js'
 
 export default class MiniMap extends Phaser.Group {
@@ -18,42 +18,42 @@ export default class MiniMap extends Phaser.Group {
   init() {
     this.horizontalBoard = createBoard.call(this, this.game, 215, 0, 'minimapBoardHorizontal')
     this.verticalBoard = createBoard.call(this, this.game, 34, 98, 'minimapBoardVertical')
-    
+
     this.resize(this.game.scale.isGameLandscape)
     this.game.Signals.onResizeSignal.add((isLandscape => this.resize(isLandscape)))
     this.game.Signals.isCardMatched.add(id => this.showCard(id))
-  
+
     this.runAnimation({alpha: 0.5,})
   }
-  
+
   hide(delay = 0.5) {
     this.cards.forEach((card, i) => {
       tweenSetAlpha(this.game, card, 0, 0.1 * i + 1)
     })
     tweenSetAlpha(this.game, this, 0, delay)
   }
-  
+
   addItem(card, id) {
     this.add(card)
     this.cards.push(card)
-    
+
     card._id = id
     card.anchor.set(0.5)
     card.alpha = 0
     card.scale.set(0.58)
   }
-  
+
   runAnimation = (params, delay = 50) => {
     this.cards.forEach((card, delayIndex) => {
       this.game.add.tween(card)
         .to({alpha: params.alpha,}, 250, Phaser.Easing.Linear.None, true)
     })
   }
-  
+
   setLineHorizontal = () => {
     let x  = 0
     let y  = 0
-  
+
     for (let i = 0; i < this.cards.length; i++) {
       const child = this.cards[i]
       child.position.set(x, y)

@@ -5,7 +5,6 @@ import Controller from './Controller.js'
 
 
 export default class GameState extends BaseState {
-
   #game = null
   #view = null
   #controller = null
