@@ -1,0 +1,56 @@
+{
+  "name": "Memory",
+  "description": "",
+  "version": "2.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "#"
+  },
+  "scripts": {
+    "build": "node bundler/build.js",
+    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "devAsMmg": "webpack serve --config ./bundler/webpack.dev.mmg.js",
+    "create_game_assets_list": "node bundler/createAssetList.js --src assets/game/ --listName gameAssets --fileName gameAssets --toBase64 false",
+    "create_preload_assets_list": "node bundler/createAssetList.js --src assets/preload/ --listName preloadAssets --fileName preloadAssets --toBase64 true",
+    "create_locale_assets_list": "node bundler/createLocaleList.js --src strings/ --listName localeAssets --fileName localeAssets"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "inline-chunk-html-plugin": "^1.1.1",
+    "jszip": "^3.10.0",
+    "pixi.js": "^8.0.0-rc.9",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0",
+    "webpack-shell-plugin-next": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-transform-runtime": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "@babel/runtime": "^7.23.8",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "core-js": "^3.35.0",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-inline-source-plugin": "1.0.0-beta.2",
+    "html-webpack-plugin": "^5.5.0",
+    "image-to-base64": "^2.2.0",
+    "ip": "^1.1.5",
+    "lil-gui": "^0.19.1",
+    "mini-css-extract-plugin": "^2.5.3",
+    "portfinder-sync": "0.0.2",
+    "raw-loader": "^4.0.2",
+    "rollup": "^2.75.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.89.0"
+  }
+}

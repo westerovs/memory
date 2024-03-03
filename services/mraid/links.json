@@ -1,0 +1,70 @@
+{
+  "slk": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.sherlock.android",
+    "appStore": "https://apps.apple.com/app/id1489732936"
+  },
+  "jor": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.romepg.android",
+    "appStore": "https://apps.apple.com/app/id1436038639"
+  },
+  "hdc": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.hiddencity.android",
+    "appStore": "https://apps.apple.com/app/id722217471"
+  },
+  "jow": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.hiddencity.android",
+    "appStore": "https://apps.apple.com/app/id722217471"
+  },
+  "joe": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.jewelsofegypt.android",
+    "appStore": "https://apps.apple.com/app/id1497168487"
+  },
+  "som": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.sheriffofmahjong.android",
+    "appStore": "https://apps.apple.com/app/id1510572629"
+  },
+  "tss": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.secretsociety",
+    "appStore": "https://apps.apple.com/app/id542180079"
+  },
+  "hms": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.homicidesquadpg.android",
+    "appStore": "https://apps.apple.com/app/id1179007417"
+  },
+  "mjj": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.mahjong.android",
+    "appStore": "https://apps.apple.com/app/id938207958"
+  },
+  "mtm": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.matchtownmakeover.android",
+    "appStore": "https://apps.apple.com/app/id1465579575"
+  },
+  "crm": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.crimemysteries.android",
+    "appStore": "https://apps.apple.com/app/id1483062561"
+  },
+  "pom": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.pyramidofmahjong.android",
+    "appStore": "https://apps.apple.com/app/id1524264978"
+  },
+  "eom": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.jewelsofmahjong.android",
+    "appStore": "https://apps.apple.com/app/id1487938828"
+  },
+  "hmm": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.hawaiipg.android",
+    "appStore": "https://apps.apple.com/app/id1491040834"
+  },
+  "tht": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.thehiddentreasurespg.android",
+    "appStore": "https://apps.apple.com/app/id1466926109"
+  },
+  "hep": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.hidden.epee.android",
+    "appStore": "https://apps.apple.com/us/app/id1550775479"
+  },
+  "mam": {
+    "googlePlay": "https://play.google.com/store/apps/details?id=com.g5e.marys.mahjong.makeover.android",
+    "appStore": "https://apps.apple.com/app/id1592055662"
+  }
+}

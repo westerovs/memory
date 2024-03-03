@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/builds/
+/.idea/
+.DS_Store
+/temp/
+/src/Game/assetsLists/localeAssets.js
+/src/Game/assetsLists/gameAssets.js
+/src/Game/assetsLists/preloadAssets.js
