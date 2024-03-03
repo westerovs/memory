@@ -1,7 +1,7 @@
 /* eslint-disable */
-import {scaleTween} from '../../utils/tweens.js'
+import {Sprite} from 'pixi.js'
 
-export default class Card extends Phaser.Sprite {
+export default class Card extends Sprite {
   constructor({scene, frame, id, delayIndex, x, y}) {
     super(scene, x, y, frame)
 
@@ -34,7 +34,7 @@ export default class Card extends Phaser.Sprite {
     game.add.tween(this.scale)
       .to({x: params.x, y: params.y},
         250, Phaser.Easing.Linear.None, true, delay * this.delayIndex)
-    
+
     game.add.tween(this)
       .to({alpha: params.alpha},
         250, Phaser.Easing.Linear.None, true, delay * this.delayIndex)

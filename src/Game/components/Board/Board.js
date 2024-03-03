@@ -1,9 +1,9 @@
-import Cell from './Cell.js'
+import Cell from './Card.js'
 import {config} from '../../config.js'
 
 const CELL_SIZE = 80
 
-export default class Map {
+export default class Board {
   #game = window._game
   #refs = this.#game.refs
   #cells = []
@@ -19,7 +19,6 @@ export default class Map {
 
   generateBoard = () => {
     let cells = []
-
     let index = 0
 
     for (let row = 0; row < this.#map.length; row++) {
@@ -35,7 +34,7 @@ export default class Map {
           cells.push(cellContainer)
 
           this.#cells.push(cellContainer)
-          this.#refs.miniMap.addChild(cellContainer)
+          this.#refs.board.addChild(cellContainer)
           index++
         }
       }

@@ -16,10 +16,8 @@ export default function GameView(game) {
   }
 
 
-  const createMiniMap = () => [
-    <StyledContainer x={200} y={200} ref={(el) => refs.miniMap = el}>
-
-    </StyledContainer>
+  const createBoard = () => [
+    <StyledContainer x={200} y={200} ref={(el) => refs.board = el}/>
   ]
 
   const createWrapper = () => {
@@ -27,8 +25,7 @@ export default function GameView(game) {
       <Container ref={(el) => refs.wrapper = el} sortableChildren={true}>
         <Sprite texture={'back'}/>
 
-        {/*{createIsland()}*/}
-        {/*{createMiniMap()}*/}
+        {createBoard()}
 
         <Sprite ref={(el) => refs.fade = el} classes={GAME_STYLES.fade}/>
       </Container>

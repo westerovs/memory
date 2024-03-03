@@ -1,10 +1,5 @@
 // Main constants
 
-const MAX_PEOPLE = 999
-const GODS = {
-  SCARLET: '',
-}
-
 const CARDS = {
   data: [1, 2, 3, 4, 5, 6], // номер прибавляется к имени карты 'card' + id + '.png'
   key: 'card',
@@ -35,6 +30,4 @@ const EVENTS = {
 
 export {
   EVENTS,
-  MAX_PEOPLE,
-  GODS,
 }

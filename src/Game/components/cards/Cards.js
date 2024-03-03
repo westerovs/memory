@@ -1,9 +1,7 @@
-/* eslint-disable */
-import { createBoard, getPositionsCards, setPointerEvents } from '../../../../#phaser/utils/utils.js'
+import {Container} from 'pixi.js'
 import Card from './Card.js'
-import ChangePhrases from '../../../../#phaser/components/ChangePhrases.js'
 
-export default class Cards extends Phaser.Group {
+export default class Cards extends Container {
   constructor(game, cfg, state) {
     super(game)
     this.game = game

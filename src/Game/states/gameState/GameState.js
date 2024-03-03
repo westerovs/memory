@@ -3,7 +3,6 @@ import BaseState from '../BaseState.js'
 import {gsap} from 'gsap'
 import Controller from './Controller.js'
 
-
 export default class GameState extends BaseState {
   #game = null
   #view = null
@@ -44,7 +43,7 @@ export default class GameState extends BaseState {
   #startGame() {
     this.#initSignals()
     this.#animate()
-      // .then(this.#createController)
+      .then(this.#createController)
   }
 
   #animate = () => {
@@ -52,7 +51,6 @@ export default class GameState extends BaseState {
 
     return gsap.timeline({easy: 'none'})
       .to(fade, {alpha: 0, visible: false, duration: 1}, '<')
-
   }
 
 

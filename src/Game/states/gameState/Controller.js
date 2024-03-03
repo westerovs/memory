@@ -1,15 +1,13 @@
 import {Container} from 'pixi.js'
 // modules
-import Cursor from '../../modules/Cursors/Cursor.js'
-import Map from '../../components/Map/Map.js'
+import Board from '../../components/Board/Board.js'
 import {EVENTS} from '../../const.js'
 
 export default class Controller extends Container {
   #game = null
   #refs = null
   // modules
-  #mainCursor = new Cursor()
-  #map = new Map()
+  #board = new Board()
 
   constructor(game) {
     super(game)
@@ -20,17 +18,16 @@ export default class Controller extends Container {
 
   init = () => {
     this.#initSignals()
-    this.#generateMap()
+    this.#generateBoard()
     console.log('Controller init')
   }
 
   #initSignals = () => {
-    this.#game.on(EVENTS.mySignal, (data) => console.log(data))
+    // this.#game.on(EVENTS.mySignal, (data) => console.log(data))
   }
 
-  #generateMap = () => {
-    this.#map.generateBoard()
-
-    window.map = this.#refs.miniMap
+  #generateBoard = () => {
+    this.#board.generateBoard()
+    window.map = this.#refs.board
   }
 }
